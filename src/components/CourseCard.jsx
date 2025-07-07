@@ -1,8 +1,7 @@
-import React from 'react'
 
 function CourseCard({ title, description, onLearnMore }) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-400">
       <div className="h-40 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
         <span className="text-white text-5xl opacity-20">
           {title.charAt(0)}
