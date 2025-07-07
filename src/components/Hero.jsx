@@ -9,7 +9,7 @@ function Hero() {
             alt="alabraar logo"
             className="w-55 h-55 mx-auto rounded-full shadow-lg border-4 border-white"
           />
-          <h1 className="text-5xl font-extrabold mt-6">
+          <h1 className="text-4xl font-extrabold mt-6">
             Welcome to Al-Abraar Foundation
           </h1>
           <p className="mt-4 text-xl max-w-2xl mx-auto">
