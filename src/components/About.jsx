@@ -3,7 +3,7 @@ import { ScrollAnimation } from './ScrollAnimation'
 
 const About = () => {
   return (
-    <section className="py-16 px-6 bg-gray-200">
+    <section className="py-16 px-4 bg-gray-200">
   <div className="max-w-7xl mx-auto">
     <ScrollAnimation animation="fadeIn">
       <h2 className="text-4xl font-bold text-center mb-12">About Us</h2>
@@ -13,14 +13,14 @@ const About = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
       {/* Mission Card */}
       <ScrollAnimation animation="fadeInLeft" delay={0.2}>
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg border border-blue-400 flex items-start">
+        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 sm:p-8 rounded-xl shadow-lg border border-blue-400 flex items-start">
           
           <div>
-            <div className="bg-blue-100 flex justify-between items-center p-4 rounded-full m-6">
-            <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-blue-100 flex justify-between items-center p-3 sm:p-4 rounded-full m-4 sm:m-6">
+            <svg className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            <h3 className="text-2xl font-bold text-blue-800 mb-3">Our Mission</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-blue-800 mb-3">Our Mission</h3>
           </div>
             
             <p className="text-gray-700">Al Abraar Foundation is dedicated to teaching Qur'anic recitation, memorization, Arabic language, and Islamic
@@ -153,5 +153,6 @@ const About = () => {
 }
 
 export default About
+
 
 
