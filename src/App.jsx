@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans overflow-x-hidden w-full max-w-full">
       <Hero />
       <About />
       <Courses />
@@ -20,5 +20,6 @@ function App() {
 }
 
 export default App
+
 
 
