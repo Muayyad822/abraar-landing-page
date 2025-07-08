@@ -1,10 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import CourseCard from './CourseCard'
 import CourseModal from './CourseModal'
 
 function Courses() {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Animation for page load
+  useEffect(() => {
+    // Set a small delay to ensure the animation runs after component mount
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   const courseData = [
     {
@@ -99,9 +110,16 @@ function Courses() {
   };
 
   return (
-    <section className="py-16 bg-white" id="courses">
+    <section className="py-16 bg-gray-50" id="courses">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div 
+          className="text-center mb-12"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(-20px)',
+            transition: 'opacity 0.5s ease, transform 0.5s ease',
+          }}
+        >
           <h2 className="text-3xl font-bold mb-4">Our Courses</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Discover our comprehensive Islamic education programs designed to nurture knowledge, 
@@ -116,20 +134,38 @@ function Courses() {
               title={course.title}
               description={course.description}
               onLearnMore={() => handleLearnMore(course)}
+              delay={0.1 + index * 0.1}
             />
           ))}
         </div>
         
-        {/* <div className="text-center mt-12">
+        <div 
+          className="text-center mt-12"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+            transition: 'opacity 0.7s ease, transform 0.7s ease',
+            transitionDelay: '0.5s'
+          }}
+        >
           <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLSfSWkISOduLZgXlj7YFqqVFZhovJULvS7-6S_KUsPmVBIRm8A/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition duration-300"
+            className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 hover:shadow-lg"
+            style={{
+              transition: 'all 0.3s ease'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
           >
             View All Courses
           </a>
-        </div> */}
+        </div>
       </div>
       
       {/* Course Modal */}
@@ -143,3 +179,6 @@ function Courses() {
 }
 
 export default Courses
+
+
+

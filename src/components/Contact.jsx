@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaFacebook, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
 function Contact() {
@@ -7,6 +7,17 @@ function Contact() {
     email: '',
     message: ''
   });
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Animation for page load
+  useEffect(() => {
+    // Set a small delay to ensure the animation runs after component mount
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -40,17 +51,41 @@ function Contact() {
   };
 
   return (
-    <section className="py-16 bg-gray-200" id="contact">
+    <section className="py-16 bg-gray-50" id="contact">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
+        <h2 
+          className="text-3xl font-bold text-center mb-12"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(-20px)',
+            transition: 'opacity 0.5s ease, transform 0.5s ease',
+          }}
+        >
+          Contact Us
+        </h2>
         
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div 
+            className="bg-white p-8 rounded-lg shadow-md"
+            style={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateX(0)' : 'translateX(-50px)',
+              transition: 'opacity 0.7s ease, transform 0.7s ease',
+            }}
+          >
             <h3 className="text-2xl font-semibold text-blue-600 mb-6">Get In Touch</h3>
             
             <div className="space-y-6">
-              <div className="flex items-start">
+              <div 
+                className="flex items-start"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? 'translateX(0)' : 'translateX(-20px)',
+                  transition: 'opacity 0.5s ease, transform 0.5s ease',
+                  transitionDelay: '0.1s'
+                }}
+              >
                 <FaEnvelope className="mt-1 mr-4 flex-shrink-0 text-blue-500 w-5 h-5" />
                 <div>
                   <h4 className="font-medium text-gray-800">Email</h4>
@@ -60,7 +95,15 @@ function Contact() {
                 </div>
               </div>
               
-              <div className="flex items-start">
+              <div 
+                className="flex items-start"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? 'translateX(0)' : 'translateX(-20px)',
+                  transition: 'opacity 0.5s ease, transform 0.5s ease',
+                  transitionDelay: '0.2s'
+                }}
+              >
                 <FaPhoneAlt className="mt-1 mr-4 flex-shrink-0 text-blue-500 w-5 h-5" />
                 <div>
                   <h4 className="font-medium text-gray-800">Phone</h4>
@@ -70,7 +113,15 @@ function Contact() {
                 </div>
               </div>
               
-              <div className="flex items-start">
+              <div 
+                className="flex items-start"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? 'translateX(0)' : 'translateX(-20px)',
+                  transition: 'opacity 0.5s ease, transform 0.5s ease',
+                  transitionDelay: '0.3s'
+                }}
+              >
                 <FaWhatsapp className="mt-1 mr-4 flex-shrink-0 text-blue-500 w-5 h-5" />
                 <div>
                   <h4 className="font-medium text-gray-800">WhatsApp</h4>
@@ -80,7 +131,15 @@ function Contact() {
                 </div>
               </div>
               
-              <div className="flex items-start">
+              <div 
+                className="flex items-start"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? 'translateX(0)' : 'translateX(-20px)',
+                  transition: 'opacity 0.5s ease, transform 0.5s ease',
+                  transitionDelay: '0.4s'
+                }}
+              >
                 <FaMapMarkerAlt className="mt-1 mr-4 flex-shrink-0 text-blue-500 w-5 h-5" />
                 <div>
                   <h4 className="font-medium text-gray-800">Location</h4>
@@ -90,25 +149,69 @@ function Contact() {
             </div>
             
             {/* Social Media Links */}
-            <div className="mt-8">
+            <div 
+              className="mt-8"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+                transition: 'opacity 0.5s ease, transform 0.5s ease',
+                transitionDelay: '0.5s'
+              }}
+            >
               <h4 className="font-medium text-gray-800 mb-4">Connect With Us</h4>
               <div className="flex space-x-4">
                 <a href="https://instagram.com/alabraarfoundation_" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   className="bg-gray-100 p-3 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
+                   className="bg-gray-100 p-3 rounded-full text-blue-500 hover:text-white"
+                   style={{
+                     transition: 'all 0.3s ease'
+                   }}
+                   onMouseOver={(e) => {
+                     e.currentTarget.style.backgroundColor = '#3b82f6';
+                     e.currentTarget.style.transform = 'scale(1.1) rotate(6deg)';
+                   }}
+                   onMouseOut={(e) => {
+                     e.currentTarget.style.backgroundColor = '';
+                     e.currentTarget.style.transform = 'scale(1) rotate(0deg)';
+                   }}
+                >
                   <FaInstagram className="w-5 h-5" />
                 </a>
                 <a href="#" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   className="bg-gray-100 p-3 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
+                   className="bg-gray-100 p-3 rounded-full text-blue-500 hover:text-white"
+                   style={{
+                     transition: 'all 0.3s ease'
+                   }}
+                   onMouseOver={(e) => {
+                     e.currentTarget.style.backgroundColor = '#3b82f6';
+                     e.currentTarget.style.transform = 'scale(1.1) rotate(6deg)';
+                   }}
+                   onMouseOut={(e) => {
+                     e.currentTarget.style.backgroundColor = '';
+                     e.currentTarget.style.transform = 'scale(1) rotate(0deg)';
+                   }}
+                >
                   <FaFacebook className="w-5 h-5" />
                 </a>
                 <a href="#" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   className="bg-gray-100 p-3 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
+                   className="bg-gray-100 p-3 rounded-full text-blue-500 hover:text-white"
+                   style={{
+                     transition: 'all 0.3s ease'
+                   }}
+                   onMouseOver={(e) => {
+                     e.currentTarget.style.backgroundColor = '#3b82f6';
+                     e.currentTarget.style.transform = 'scale(1.1) rotate(6deg)';
+                   }}
+                   onMouseOut={(e) => {
+                     e.currentTarget.style.backgroundColor = '';
+                     e.currentTarget.style.transform = 'scale(1) rotate(0deg)';
+                   }}
+                >
                   <FaYoutube className="w-5 h-5" />
                 </a>
               </div>
@@ -116,7 +219,14 @@ function Contact() {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div 
+            className="bg-white p-8 rounded-lg shadow-md"
+            style={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateX(0)' : 'translateX(50px)',
+              transition: 'opacity 0.7s ease, transform 0.7s ease',
+            }}
+          >
             <h3 className="text-2xl font-semibold text-blue-600 mb-6">Send Us a Message</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -129,6 +239,9 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  style={{
+                    transition: 'all 0.3s ease'
+                  }}
                 />
               </div>
               
@@ -142,6 +255,9 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  style={{
+                    transition: 'all 0.3s ease'
+                  }}
                 />
               </div>
               
@@ -155,12 +271,24 @@ function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  style={{
+                    transition: 'all 0.3s ease'
+                  }}
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 hover:shadow-lg flex items-center justify-center"
+                style={{
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
               >
                 <FaWhatsapp className="mr-2" /> Send via WhatsApp
               </button>
@@ -173,4 +301,7 @@ function Contact() {
 }
 
 export default Contact
+
+
+
 
