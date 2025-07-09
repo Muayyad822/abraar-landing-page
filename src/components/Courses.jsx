@@ -28,7 +28,6 @@ function Courses() {
         "Essential tajweed rules",
         "Memorization techniques",
         "Practical recitation sessions",
-        "Tafsir of memorized surahs"
       ],
       features: [
         "Live online classes with qualified instructors",
@@ -43,10 +42,7 @@ function Courses() {
       description: "Learn to read, write, and speak Arabic fluently.",
       fullDescription: "A structured Arabic language program that takes students from basic to advanced levels. Learn to read, write, and speak Arabic with confidence through our proven methodology.",
       curriculum: [
-        "Arabic alphabet and writing system",
         "Essential vocabulary building",
-        "Grammar fundamentals (nahw)",
-        "Morphology (sarf)",
         "Conversation practice",
         "Reading and comprehension"
       ],
@@ -54,7 +50,7 @@ function Courses() {
         "Progressive learning approach",
         "Interactive exercises and assignments",
         "Cultural context and practical usage",
-        "Speaking practice with native instructors"
+        "Speaking practice with expert instructors"
       ],
       duration: "3 levels, 12 weeks each"
     },
@@ -65,7 +61,6 @@ function Courses() {
       curriculum: [
         "Introduction to Islamic studies",
         "Basic Arabic vocabulary and grammar",
-        "Qur'anic recitation fundamentals",
         "Islamic etiquette and manners",
         "Stories of the Prophets",
         "Fundamentals of Islamic belief"
@@ -74,7 +69,6 @@ function Courses() {
         "Age-appropriate teaching methods",
         "Engaging and interactive lessons",
         "Regular progress reports",
-        "Parent involvement opportunities"
       ],
       duration: "24 weeks"
     },
@@ -88,7 +82,6 @@ function Courses() {
         "Hadith studies and sciences",
         "Tafsir methodology",
         "Islamic history and civilization",
-        "Comparative religion"
       ],
       features: [
         "Rigorous academic curriculum",
@@ -96,7 +89,7 @@ function Courses() {
         "Critical thinking and analysis",
         "Preparation for higher Islamic studies"
       ],
-      duration: "2 years (4 semesters)"
+      duration: "24 weeks"
     }
   ];
 
@@ -148,23 +141,14 @@ function Courses() {
             transitionDelay: '0.5s'
           }}
         >
-          <a 
+          {/* <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLSfSWkISOduLZgXlj7YFqqVFZhovJULvS7-6S_KUsPmVBIRm8A/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 hover:shadow-lg"
-            style={{
-              transition: 'all 0.3s ease'
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.transform = 'scale(1.05)';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-            }}
           >
             View All Courses
-          </a>
+          </a> */}
         </div>
       </div>
       
