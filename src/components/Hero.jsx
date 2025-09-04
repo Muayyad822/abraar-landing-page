@@ -27,12 +27,22 @@ function Hero() {
         </div>
 
         <ScrollAnimation animation="fadeInUp" delay={0.8}>
-          <div className="mt-8 space-x-4">
+          <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 items-center justify-center">
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfSWkISOduLZgXlj7YFqqVFZhovJULvS7-6S_KUsPmVBIRm8A/viewform?usp=dialog" 
+              href="https://forms.gle/ZZXLwpRPpmQJM71e9" 
               className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Enroll Now
+            </a>
+            <a 
+              href="https://forms.gle/mn8eZLsLULXppHZ7A" 
+              className="bg-gray-900 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-700 transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply as a tutor
             </a>
           </div>
         </ScrollAnimation>

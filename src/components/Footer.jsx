@@ -21,7 +21,7 @@ const Footer = () => {
                 <FaInstagram className="w-6 h-6" />
               </a>
               <a href="#" 
-                 target="_blank" 
+            ve     target="_blank" 
                  rel="noopener noreferrer"
                  className="text-gray-300 hover:text-blue-400 transition-colors">
                 <FaFacebook className="w-6 h-6" />

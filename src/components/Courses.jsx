@@ -120,15 +120,16 @@ function Courses() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {courseData.map((course, index) => (
-            <CourseCard 
-              key={index}
-              title={course.title}
-              description={course.description}
-              onLearnMore={() => handleLearnMore(course)}
-              delay={0.1 + index * 0.1}
-            />
+            <div key={index} className="h-full">
+              <CourseCard
+                title={course.title}
+                description={course.description}
+                onLearnMore={() => handleLearnMore(course)}
+                delay={0.1 + index * 0.1}
+              />
+            </div>
           ))}
         </div>
         

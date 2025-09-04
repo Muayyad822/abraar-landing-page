@@ -12,42 +12,40 @@ const About = () => {
     {/* Mission & Vision Cards */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
       {/* Mission Card */}
-      <ScrollAnimation animation="fadeInLeft" delay={0.2}>
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 sm:p-8 rounded-xl shadow-lg border border-blue-400 flex items-start">
-          
-          <div>
-            <div className="bg-blue-100 flex justify-between items-center p-3 sm:p-4 rounded-full m-4 sm:m-6">
-            <svg className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            <h3 className="text-xl sm:text-2xl font-bold text-blue-800 mb-3">Our Mission</h3>
+      <ScrollAnimation animation="fadeInLeft" delay={0.3}>
+        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 sm:p-8 rounded-xl shadow-lg border border-blue-400 h-full flex flex-col">
+          <div className="flex items-center mb-4">
+            <div className="bg-blue-100 p-3 sm:p-4 rounded-full mr-4">
+              <svg className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-bold text-blue-800">Our Mission</h3>
           </div>
-            
-            <p className="text-gray-700">Al Abraar Foundation is dedicated to teaching Qur'anic recitation, memorization, Arabic language, and Islamic
-              sciences. We strive to nurture a love for the Qur'an, instill discipline, and uphold Islamic values. Through
-              structured education, we empower individuals to apply their knowledge in daily life. Our goal is to preserve
-              and spread the teachings of Islam with excellence and sincerity.</p>
-          </div>
+          <p className="text-gray-700 flex-grow">Al Abraar Foundation is dedicated to teaching Qur'anic recitation, memorization, Arabic language, and Islamic
+            sciences. We strive to nurture a love for the Qur'an, instill discipline, and uphold Islamic values. Through
+            structured education, we empower individuals to apply their knowledge in daily life. Our goal is to preserve
+            and spread the teachings of Islam with excellence and sincerity.</p>
         </div>
       </ScrollAnimation>
 
       {/* Vision Card */}
-      <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg border border-green-400 flex items-start">
-        
-        <div>
-          <div className="bg-green-100 flex justify-between items-center p-4 rounded-full m-6">
-          <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
-          <h3 className="text-2xl font-bold text-green-800 mb-3">Our Vision</h3>
-        </div>
-          
-          <p className="text-gray-700">We envision becoming a leading Islamic academy that produces skilled Qur’an reciters, scholars, and
+      <ScrollAnimation animation="fadeInRight" delay={0.3}>
+        <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 sm:p-8 rounded-xl shadow-lg border border-green-400 h-full flex flex-col">
+          <div className="flex items-center mb-4">
+            <div className="bg-green-100 p-3 sm:p-4 rounded-full mr-4">
+              <svg className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-bold text-green-800">Our Vision</h3>
+          </div>
+          <p className="text-gray-700 flex-grow">We envision becoming a leading Islamic academy that produces skilled Qur'an reciters, scholars, and
             educators. Our aim is to bridge knowledge and practice, inspiring individuals to live by Islamic principles.
-            Through quality education, we seek to spread the light of the Qur’an and shape future leaders who positively
+            Through quality education, we seek to spread the light of the Qur'an and shape future leaders who positively
             impact their communities.</p>
         </div>
-      </div>
+      </ScrollAnimation>
     </div>
 
     {/* Stats Grid */}
