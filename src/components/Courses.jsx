@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import CourseCard from './CourseCard'
 import CourseModal from './CourseModal'
+import { courseData } from '../courseData';
 
 function Courses() {
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -16,82 +17,6 @@ function Courses() {
     
     return () => clearTimeout(timer);
   }, []);
-
-  const courseData = [
-    {
-      title: "Qur'an from Scratch",
-      description: "Learn correct pronunciation, tajweed rules, and memorization.",
-      fullDescription: "Our comprehensive Qur'an program designed for beginners and those looking to improve their recitation. This course covers proper pronunciation (makharij), tajweed rules, and effective memorization techniques.",
-      curriculum: [
-        "Introduction to Arabic letters and sounds",
-        "Proper articulation points (makharij)",
-        "Essential tajweed rules",
-        "Memorization techniques",
-        "Practical recitation sessions",
-      ],
-      features: [
-        "Live online classes with qualified instructors",
-        "Small group sessions for personalized attention",
-        "Regular progress assessments",
-        "Certification upon completion"
-      ],
-      duration: "16 weeks (extendable based on student progress)"
-    },
-    {
-      title: "Arabiyyah Course",
-      description: "Learn to read, write, and speak Arabic fluently.",
-      fullDescription: "A structured Arabic language program that takes students from basic to advanced levels. Learn to read, write, and speak Arabic with confidence through our proven methodology.",
-      curriculum: [
-        "Essential vocabulary building",
-        "Conversation practice",
-        "Reading and comprehension"
-      ],
-      features: [
-        "Progressive learning approach",
-        "Interactive exercises and assignments",
-        "Cultural context and practical usage",
-        "Speaking practice with expert instructors"
-      ],
-      duration: "3 levels, 12 weeks each"
-    },
-    {
-      title: "Idaady Programme",
-      description: "Arabic and Islamic prep program for beginners.",
-      fullDescription: "A foundational program designed for beginners to build a solid base in Arabic language and Islamic studies. This preparatory course sets students up for success in more advanced Islamic education.",
-      curriculum: [
-        "Introduction to Islamic studies",
-        "Basic Arabic vocabulary and grammar",
-        "Islamic etiquette and manners",
-        "Stories of the Prophets",
-        "Fundamentals of Islamic belief"
-      ],
-      features: [
-        "Age-appropriate teaching methods",
-        "Engaging and interactive lessons",
-        "Regular progress reports",
-      ],
-      duration: "24 weeks"
-    },
-    {
-      title: "Thanawy Programme",
-      description: "Structured Islamic learning for senior secondary-level students.",
-      fullDescription: "An advanced program for students who have completed the Idaady level or have equivalent knowledge. This program delves deeper into Islamic sciences and Arabic studies at a senior secondary level.",
-      curriculum: [
-        "Advanced Arabic grammar and literature",
-        "Principles of Fiqh (Islamic jurisprudence)",
-        "Hadith studies and sciences",
-        "Tafsir methodology",
-        "Islamic history and civilization",
-      ],
-      features: [
-        "Rigorous academic curriculum",
-        "Research projects and presentations",
-        "Critical thinking and analysis",
-        "Preparation for higher Islamic studies"
-      ],
-      duration: "24 weeks"
-    }
-  ];
 
   const handleLearnMore = (course) => {
     setSelectedCourse(course);
@@ -120,12 +45,14 @@ function Courses() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {courseData.map((course, index) => (
-            <div key={index} className="h-full">
+            <div key={index} className="flex h-full">
               <CourseCard
                 title={course.title}
                 description={course.description}
+                fee={course.fee}
+                format={course.format}
                 onLearnMore={() => handleLearnMore(course)}
                 delay={0.1 + index * 0.1}
               />
@@ -164,6 +91,3 @@ function Courses() {
 }
 
 export default Courses
-
-
-

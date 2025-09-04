@@ -105,10 +105,27 @@ function CourseModal({ course, isOpen, onClose }) {
             </div>
           )}
           
-          {course.duration && (
+          {/* Duration, Fee, and Format */}
+          {(course.duration || course.fee || course.format) && (
             <div className="mb-6" style={{ animation: 'fadeInUp 0.7s ease-out forwards' }}>
-              <h4 className="text-lg font-semibold mb-2 text-gray-800">Duration</h4>
-              <p className="text-gray-600">{course.duration}</p>
+              {course.duration && (
+                <>
+                  <h4 className="text-lg font-semibold mb-2 text-gray-800">Duration</h4>
+                  <p className="text-gray-600 mb-2">{course.duration}</p>
+                </>
+              )}
+              {course.fee && (
+                <>
+                  <h4 className="text-lg font-semibold mb-2 text-gray-800">Fee</h4>
+                  <p className="text-gray-600 mb-2">{course.fee}</p>
+                </>
+              )}
+              {course.format && (
+                <>
+                  <h4 className="text-lg font-semibold mb-2 text-gray-800">Format</h4>
+                  <p className="text-gray-600">{course.format}</p>
+                </>
+              )}
             </div>
           )}
         </div>
@@ -119,7 +136,7 @@ function CourseModal({ course, isOpen, onClose }) {
           style={{ animation: 'fadeInUp 0.8s ease-out forwards' }}
         >
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfSWkISOduLZgXlj7YFqqVFZhovJULvS7-6S_KUsPmVBIRm8A/viewform?usp=dialog"
+            href="https://forms.gle/ZZXLwpRPpmQJM71e9"
             target="_blank"
             rel="noopener noreferrer" 
             className="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 hover:shadow-lg"

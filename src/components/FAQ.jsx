@@ -8,7 +8,7 @@ const FAQ = () => {
     const faqs = [
         {
             question: "How do I enroll?",
-            answer: "Simply visit the Admission page, fill out the form, and our team will contact you with the next steps."
+            answer: "Simply select your preferred course and click Learn More. Review the course details carefully, then click Enroll Now to complete the registration form. Once submitted, our admissions team will promptly reach out to guide you through the next steps and confirm your enrollment."
         },
         {
             question: "What courses do you offer?",
