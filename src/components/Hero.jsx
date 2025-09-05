@@ -39,7 +39,7 @@ function Hero() {
             <img
               src={logo}
               alt="alabraar logo"
-              className="w-36 h-36 md:w-48 md:h-48 mx-auto rounded-full shadow-lg border-4 border-white"
+              className="w-48 h-48 md:w-55 md:h-55 mx-auto rounded-full shadow-lg border-4 border-white"
             />
           </ScrollAnimation>
           <ScrollAnimation animation="fadeInUp" delay={0.4}>
@@ -48,10 +48,10 @@ function Hero() {
             </h1>
           </ScrollAnimation>
           <ScrollAnimation animation="fadeInUp" delay={0.6}>
-            <p className="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">
+            <p className="mt-4 text-2xl md:text-2xl max-w-2xl mx-auto">
               Preserving Knowledge, Nurturing Faith.
             </p>
-            <p className="mt-4 text-sm md:text-lg max-w-2xl mx-auto">
+            <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto">
               Join our comprehensive Arabic and Islamic education programs
               designed to strengthen your connection with the Quran and Islamic
               knowledge through expert instruction and proven methodologies.
