@@ -214,10 +214,12 @@ const Banner = () => {
         </a>
 
         {/* Regular price note */}
-        <p className="mt-4 text-md flex items-center justify-center gap-2 opacity-80">
-          <Clock className="w-4 h-4" />
-          Regular Price: ₦20,000 after Early Bird ends
-        </p>
+        <div className="flex items-center justify-center">
+          {/* <Clock className="w-4 h-4" /> */}
+          <p className="mt-4 text-md opacity-80">
+            Regular Price: ₦20,000 after Early Bird ends
+          </p>
+        </div>
       </div>
     </section>
   );

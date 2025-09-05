@@ -23,7 +23,7 @@ function Hero() {
             <p className="mt-4 text-3xl max-w-2xl mx-auto">
               Preserving Knowledge, Nurturing Faith.
             </p>
-            <p className="mt-4 text-lg max-w-2xl mx-auto">
+            <p className="mt-4 text-md max-w-2xl mx-auto">
               Join our comprehensive Arabic and Islamic education programs designed to strengthen your connection with the Quran and Islamic knowledge through expert instruction and proven methodologies.
             </p>
           </ScrollAnimation>
