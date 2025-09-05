@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaFacebook, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaFacebook, FaYoutube, FaWhatsapp, FaTiktok } from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -178,7 +178,7 @@ function Contact() {
                 >
                   <FaInstagram className="w-5 h-5" />
                 </a>
-                <a href="#" 
+                <a href="https://www.tiktok.com/@alabraar.academy?_t=ZS-8zTFCv10Ufy&_r=1" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="bg-gray-100 p-3 rounded-full text-blue-500 hover:text-white"
@@ -194,9 +194,9 @@ function Contact() {
                      e.currentTarget.style.transform = 'scale(1) rotate(0deg)';
                    }}
                 >
-                  <FaFacebook className="w-5 h-5" />
+                  <FaTiktok className="w-5 h-5" />
                 </a>
-                <a href="#" 
+                <a href="https://youtube.com/@alabraarislamicfoundation6752?si=mZBGUwN7CkNGlTZC" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="bg-gray-100 p-3 rounded-full text-blue-500 hover:text-white"

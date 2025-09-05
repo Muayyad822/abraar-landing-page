@@ -2,13 +2,14 @@ import { useState } from "react";
 
 
 const FAQ = () => {
+    const [openIndex, setOpenIndex] = useState(null);
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
     const faqs = [
         {
             question: "How do I enroll?",
-            answer: "Simply select your preferred course and click Learn More. Review the course details carefully, then click Enroll Now to complete the registration form. Once submitted, our admissions team will promptly reach out to guide you through the next steps and confirm your enrollment."
+            answer: "Simply select your preferred course and click Learn More. Review the course details carefully, then click Enroll Now to complete the registration form. Once submitted, our admission team will reach out via mail to confirm your registration and guide you through the next steps of your enrollment."
         },
         {
             question: "What courses do you offer?",
@@ -29,7 +30,6 @@ const FAQ = () => {
         
     ];
 
-    const [openIndex, setOpenIndex] = useState(null);
   return (
     <section className="py-16 bg-gray-100 px-6">
                 <h2 className="text-4xl font-bold text-blue-600 text-center">Frequently Asked Questions</h2>

@@ -10,6 +10,24 @@ const Testimonials = () => {
         className="flex gap-8 mt-8 max-w-7xl mx-auto mb-4 overflow-x-auto scroll-smooth"
         style={{ scrollbarWidth: "thin", scrollbarColor: "#3182ce #edf2f7" }}
       >
+        <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px]">
+          <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
+          <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
+            "I'm glad he's doing well. He's always eager every weekend for the
+            Arabic class."
+          </p>
+          <h4 className="mt-4 font-semibold text-blue-600">- Parent, USA </h4>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px]">
+          <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
+          <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
+            "Alhamdulillah! The classes have been awesome! What they have
+            achieved in 3 weeks is amazing. Alhamdulillah we are so pleased"
+          </p>
+          <h4 className="mt-4 font-semibold text-blue-600">
+            - Parent, Canada{" "}
+          </h4>
+        </div>
         <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px] justify-center">
           <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
           <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
@@ -51,14 +69,7 @@ const Testimonials = () => {
             - Masturah H., Nigeria
           </h4>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px]">
-          <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
-          <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
-            "I'm glad he's doing well. He's always eager every weekend for the
-            Arabic class."
-          </p>
-          <h4 className="mt-4 font-semibold text-blue-600">- Parent, USA </h4>
-        </div>
+        
         <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px]">
           <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
           <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
@@ -92,16 +103,7 @@ const Testimonials = () => {
             - Masheehah, Nigeria{" "}
           </h4>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px]">
-          <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
-          <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
-            "Alhamdulillah! The classes have been awesome! What they have
-            achieved in 3 weeks is amazing. Alhamdulillah we are so pleased"
-          </p>
-          <h4 className="mt-4 font-semibold text-blue-600">
-            - Parent, Canada{" "}
-          </h4>
-        </div>
+        
         <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 flex-shrink-0 w-80 flex flex-col min-h-[300px]">
           <FaQuoteLeft className="text-blue-200 text-2xl mb-2 mx-auto" />
           <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
