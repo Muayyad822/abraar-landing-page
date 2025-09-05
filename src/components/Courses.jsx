@@ -53,6 +53,7 @@ function Courses() {
                 description={course.description}
                 fee={course.fee}
                 format={course.format}
+                img={course.img}
                 onLearnMore={() => handleLearnMore(course)}
                 delay={0.1 + index * 0.1}
               />

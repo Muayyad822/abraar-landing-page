@@ -1,6 +1,7 @@
 export const courseData = [
   {
     title: "Qur’an from Scratch",
+    img: {src: "/assets/quranfromscr.jpg"},
     description: "Learn Qur’an from the basics with proper pronunciation, recitation, and Tajwīd rules.",
     fullDescription:
       "Have you always wanted to learn the Qur’an but didn’t know where to start? \n Our Qur’an from Scratch Course is designed especially for beginners who are eager to build a strong foundation in reading and reciting the Qur’an with confidence.\n\nOver the course of 6 months, our qualified teachers will guide you step by step, ensuring that you don’t just learn, but also understand and apply what you’re taught.",
@@ -21,6 +22,7 @@ export const courseData = [
   },
   {
     title: "Beginner Arabic Course",
+    img: {src: "/assets/beginarabicc.png"},
     description: "Learn to speak, understand, and read Arabic with ease through structured lessons.",
     fullDescription:
       "Do you dream of understanding and speaking Arabic with ease? Our Beginner Arabic Course is the perfect starting point for anyone who wants to build a solid foundation in the Arabic language, whether for Qur’an study, travel, or everyday conversation.\n\nOver the course of 6 months, you’ll be guided step by step by experienced instructors, helping you develop the skills you need to speak, understand, and engage confidently in Arabic.",
@@ -42,6 +44,7 @@ export const courseData = [
   },
   {
     title: "Fiqh An-Nisā",
+    img: {src: "/assets/fiqhnisaa.jpg"},
     description: "Learn essential rulings for Muslim women based on authentic Islamic sources.",
     fullDescription:
       "The Fiqh An-Nisā Course is designed to help Muslim women gain clear and practical knowledge of Islamic rulings related specifically to them. This course provides guidance based on authentic sources, empowering women to practice their faith with confidence and understanding.\n\nIn just 1 month, our qualified instructors will walk you through essential topics that every Muslim woman needs to know in her daily life.",
@@ -63,6 +66,7 @@ export const courseData = [
   },
   {
     title: "Idaadi Program",
+    img: {src: "/assets/idaadi.jpg"},
     description: "A 10-month structured program covering Arabic, Fiqh, Hadith, Seerah, and Aqeedah.",
     fullDescription:
       "The Idaadi Program is a structured learning journey designed to give students a well-rounded foundation in essential Islamic sciences. Over 10 months (2 terms), learners will gain knowledge and skills that strengthen their faith, character, and understanding of Islam.\n\nThis program is perfect for students who want a comprehensive Islamic education beyond individual courses, combining key subjects into one complete package.",
@@ -85,6 +89,7 @@ export const courseData = [
   },
   {
     title: "Thanawiy Program",
+    img: {src: "/assets/thanawi.jpg"},
     description: "Intermediate-to-advanced program in Arabic, Qur’an, Fiqh, and Hadith sciences.",
     fullDescription:
       "The Thanawiy Program is designed for students who already have a foundation in Arabic and Islamic studies and are ready to advance into deeper scholarly learning. Over the span of 10 months (2 terms), this program introduces learners to core subjects of higher Islamic education, preparing them for deeper understanding and application of the deen.",

@@ -9,7 +9,7 @@ const Footer = () => {
           
           {/* About Section */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-4 text-blue-400">Al-Abraar Foundation</h3>
+            <h3 className="text-xl font-bold mb-4 text-blue-400">Al-Abraar Academy</h3>
             <p className="text-gray-300 mb-4">
               Providing authentic Islamic education through structured online programs in Quranic studies, Arabic language, and Islamic sciences.
             </p>
@@ -75,7 +75,7 @@ const Footer = () => {
         {/* Copyright and Bottom Row */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Al-Abraar Foundation. All rights reserved.
+            &copy; {new Date().getFullYear()} Al-Abraar Academy. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

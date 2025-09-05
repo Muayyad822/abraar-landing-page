@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/alabraar2.jpg";
+import logo from "/assets/alabraar2.jpg";
 import { ScrollAnimation } from './ScrollAnimation';
 
 function Hero() {
@@ -16,7 +16,7 @@ function Hero() {
           </ScrollAnimation>
           <ScrollAnimation animation="fadeInUp" delay={0.4}>
             <h1 className="text-4xl font-extrabold mt-6">
-              Welcome to Al-Abraar Foundation
+              Welcome to Al-Abraar Academy
             </h1>
           </ScrollAnimation>
           <ScrollAnimation animation="fadeInUp" delay={0.6}>
@@ -33,7 +33,7 @@ function Hero() {
           <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 items-center justify-center">
             <a 
               href="https://forms.gle/ZZXLwpRPpmQJM71e9" 
-              className="bg-white text-blue-700 border-2 border-blue-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition duration-300"
+              className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >

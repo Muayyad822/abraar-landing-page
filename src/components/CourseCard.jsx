@@ -1,6 +1,6 @@
 import { ScrollAnimation } from './ScrollAnimation'
 
-function CourseCard({ title, description, fee, format, onLearnMore, delay = 0 }) {
+function CourseCard({ title, description, fee, format, onLearnMore, delay = 0, img }) {
   return (
     <ScrollAnimation animation="fadeInUp" delay={delay}>
       <div
@@ -12,14 +12,19 @@ function CourseCard({ title, description, fee, format, onLearnMore, delay = 0 })
         }}
       >
         <div className="h-40 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center overflow-hidden flex-shrink-0">
-          <span className="text-white text-6xl opacity-20">
-            {title.charAt(0)}
-          </span>
-        </div>
-        <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-bold mb-3 text-blue-700">{title}</h3>
-          <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-          {/* Fee and Format */}
+          {/* <span className="text-white text-6xl opacity-20">
+                {title.charAt(0)}
+                </span> */}
+                <img
+                src={img.src}
+                alt={`${title} course image`}
+                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold mb-3 text-blue-700">{title}</h3>
+                <p className="text-gray-600 mb-4 flex-grow">{description}</p>
+                {/* Fee and Format */}
           {(fee || format) && (
             <div className="mb-4 mt-auto">
               {fee && <div className="text-sm text-blue-700 font-semibold">Fee: <span className="text-gray-700">{fee}</span></div>}
