@@ -16,7 +16,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 animate-gradient text-white text-center lg:py-46 py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 animate-gradient text-white text-center lg:py-46 py-12 overflow-hidden">
       {/* Parallax Circles */}
       <div
         className="absolute top-[-50px] left-[-50px] w-40 h-40 md:w-64 md:h-64 bg-white/20 rounded-full animate-breath"
@@ -39,7 +39,7 @@ function Hero() {
             <img
               src={logo}
               alt="alabraar logo"
-              className="w-55 h-55 mx-auto rounded-full shadow-lg border-4 border-white"
+              className="w-52 h-52 mx-auto rounded-full shadow-lg border-4 border-white"
             />
           </ScrollAnimation>
           <ScrollAnimation animation="fadeInUp" delay={0.4}>

@@ -1,4 +1,4 @@
-import { FaEnvelope, FaInstagram, FaFacebook, FaYoutube, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaInstagram, FaFacebook, FaYoutube, FaPhoneAlt, FaMapMarkerAlt, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -20,13 +20,13 @@ const Footer = () => {
                  className="text-gray-300 hover:text-blue-400 transition-colors">
                 <FaInstagram className="w-6 h-6" />
               </a>
-              <a href="#" 
+              <a href="https://www.tiktok.com/@alabraar.academy?_t=ZS-8zTFCv10Ufy&_r=1" 
             ve     target="_blank" 
                  rel="noopener noreferrer"
                  className="text-gray-300 hover:text-blue-400 transition-colors">
-                <FaFacebook className="w-6 h-6" />
+                <FaTiktok className="w-6 h-6" />
               </a>
-              <a href="#" 
+              <a href="https://youtube.com/@alabraarislamicfoundation6752?si=mZBGUwN7CkNGlTZC" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="text-gray-300 hover:text-blue-400 transition-colors">

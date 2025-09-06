@@ -18,7 +18,7 @@ export const courseData = [
     ],
     duration: "6 Months",
     fee: "₦40,000 / month",
-    format: "Online, live interactive sessions, Q&A"
+    format: "Online, live interactive sessions, Q&A, Assessments"
   },
   {
     title: "Beginner Arabic Course",
@@ -40,7 +40,7 @@ export const courseData = [
     ],
     duration: "6 Months",
     fee: "₦40,000 / month",
-    format: "Online, live interactive sessions, Q&A"
+    format: "Online, live interactive sessions, Q&A, Assessments"
   },
   {
     title: "Fiqh An-Nisā",
@@ -62,7 +62,7 @@ export const courseData = [
     ],
     duration: "1 Month",
     fee: "₦20,000 (one-time)",
-    format: "Online, live interactive sessions, Q&A"
+    format: "Online, live interactive sessions, Q&A, Assessments"
   },
   {
     title: "Idaadi Program",
@@ -85,7 +85,7 @@ export const courseData = [
     ],
     duration: "10 Months (2 Terms)",
     fee: "₦120,000 (one-time)",
-    format: "Online, live interactive sessions, Q&A"
+    format: "Online, live interactive sessions, Q&A, Assessments"
   },
   {
     title: "Thanawiy Program",
@@ -109,6 +109,6 @@ export const courseData = [
     ],
     duration: "10 Months (2 Terms)",
     fee: "₦120,000 (one-time)",
-    format: "Online, live interactive sessions, Q&A, Assessments"
+    format: "Online, live interactive sessions, Q&A, Assessments "
   }
 ];
